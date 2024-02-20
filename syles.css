@@ -1,0 +1,124 @@
+@import url(https://db.onlinewebfonts.com/c/12108809f49c49bcdc126dcecc938761?family=Nexa+Light);
+
+
+
+
+.form-label {
+    color: #B18F30;
+    font-family: "Nexa Light";
+}
+
+.form-check-input{
+    border-radius: 0;
+    border-width: 2px;
+   
+    width: 45px;
+    height: 45px;
+    border-color: #CACACA;
+    
+}
+.form-check-input:checked{
+    background-color: #B18F30;
+    border: 2px solid #CACACA;
+}
+
+.form-check-input:focus{
+    border: 2px solid #CACACA;
+}
+
+
+.form-select , .form-control{
+    font-family: "Nexa Light";
+}
+
+.form-control:focus{
+    border: 2px solid #CACACA ;
+}
+
+
+
+.form-select{
+    border-width: 2px;
+    background-image: url("./icon/arrow.svg");   
+    
+}
+.pepe{
+    padding: 2rem;
+    background-color: #F2F2F2;
+    color:red;
+}
+.first-selector{
+    background-image: url("./icon/arrowgris.svg");   
+}
+
+.form-select::after {
+    display: none;
+}
+
+.input-border-style{
+   border-color: #CACACA;
+}
+
+.btn{
+    
+   text-align: justify;
+    border: 2px solid #CACACA;
+    color: #F2F2F2;
+    font-family: "Nexa Light";
+}
+.btn:focus{
+    border: 2px solid #CACACA;
+}
+.btn:active{
+    border: 2px solid #CACACA;
+}
+.dropdown-item{
+    font-family: "Nexa Light";
+   
+}
+.arrow-gold{
+    width: 14px;
+    height: 14px;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+.dropdown-item:hover{
+    background-color: #F5F5F5;
+}
+
+
+.form-select:focus{
+    border: 2px solid;
+    border-color: #CACACA;
+    
+    -webkit-box-shadow: -1px 9px 18px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 9px 18px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px 9px 18px 0px rgba(0,0,0,0.75);
+    
+}
+.form-select:active{
+    background-color: #f8f9fa; /* Background color */
+    color: #212529; /* Text color */
+}
+.dropdown-item:active{
+    background-color:  #F5F5F5;
+    color: black;
+}
+
+option{
+    width: 1rem;
+}
+.selectoOption{
+    padding: 5px;
+
+}
+.selectoOption:hover{
+    background-color: aqua;
+}
+
+/* Style options when select is clicked */
+.form-select:focus ~ option {
+    background-color: #f8f9fa; /* Background color */
+    color: #212529; /* Text color */
+}

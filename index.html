@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="syles.css">
+    <script src="java.js"></script>
+   
+</head>
+
+<body>
+    <div class="container flex-column lg:w-50 sm:w-80 shadow-none p-3">
+
+
+        <form class="row">
+            <div class="col-12">
+                <label class="form-label">Cuenta Credito</label>
+                
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary d-flex dropdown-toggle bg-white text-dark w-100 " type="button" id="tipoDocumentoDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                      <div id="text-dropdown-2" class="w-100">Seleccionar</div>
+                      <div>
+                        <img class="arrow-gold" src="./icon/arrowgris.svg"/>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu w-100" id="" aria-labelledby="tipoDocumentoDropdown">
+                      <li><a class="dropdown-item" href="#" value="ruc">1</a></li>
+                      <li><a class="dropdown-item" href="#" value="ci">2</a></li>
+                      <li><a class="dropdown-item" href="#" value="pnr">3</a></li>
+                      <li><a class="dropdown-item" href="#" value="pr">4</a></li>
+    
+                    </ul>
+                  </div>
+                
+            </div>
+
+
+
+            <div class="col-6 mt-3">
+
+                <div class="row">
+
+
+                    <div class="col-md-8">
+                        <label for="inputCity" class="form-label">Numero de Cuenta</label>
+                        <input type="text" class="form-control border-2 border-top-0 border-start-0 border-end-0 rounded-0 shadow-none  input-border-style "
+                            id="inputCity">
+                    </div>
+                    <div class="col-md-2">
+                        <div class="d-flex flex-column align-items-center">
+
+                            <label class="form-label">Guardar</label>
+                            <input class="form-check-input shadow-none rounded-0 border-3" type="checkbox" value=""
+                                 id="flexCheckDefault">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col mt-3">
+                    <label class="form-label">Banco</label>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary d-flex dropdown-toggle bg-white text-dark w-100 " type="button" id="tipoDocumentoDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                          <div id="text-dropdown-2" class="w-100">Seleccionar</div>
+                          <div>
+                            <img class="arrow-gold" src="./icon/arrow.svg"/>
+                          </div>
+                        </button>
+                        <ul class="dropdown-menu w-100" id="" aria-labelledby="tipoDocumentoDropdown">
+                          <li><a class="dropdown-item" href="#" value="ruc">1</a></li>
+                          <li><a class="dropdown-item" href="#" value="ci">2</a></li>
+                          <li><a class="dropdown-item" href="#" value="pnr">3</a></li>
+                          <li><a class="dropdown-item" href="#" value="pr">4</a></li>
+        
+                        </ul>
+                      </div>
+                </div>
+
+                
+              
+                <div class="col mt-3">
+                    <label class="form-label">Tipo de documento</label>
+                    <!-- <select id="tipoDocumento" class="form-select form-select-md shadow-none " aria-label=".form-select-sm example">
+                        
+                        <div><option selected    class="selectoOption" >Seleccionar</option></div>
+                        <option value="ruc" class="selectoOption">Registro unico del contribuyente</option>
+                        <option value="ci"  class="selectoOption">Cedula de Identidad</option>
+                        <option value="pnr"  class="selectoOption">Personas No Residentes</option>
+                        <option value="pr"  class="selectoOption">Personas Residentes</option>
+                        <option value="pr"  class="selectoOption">  <span class="pepe">Hola</span></option>
+                        
+
+                        
+                    </select> -->
+                    <div class="dropdown">
+                        <button class="btn btn-secondary d-flex dropdown-toggle bg-white text-dark w-100 " type="button" id="tipoDocumentoDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                          <div id="text-dropdown-3" class="w-100">Seleccionar</div>
+                          <div>
+                            <img class="arrow-gold" src="./icon/arrow.svg"/>
+                          </div>
+                        </button>
+                        <ul class="dropdown-menu w-100" id="tipoDocumento-menu" aria-labelledby="tipoDocumentoDropdown">
+                          <li><a class="dropdown-item" href="#" value="ruc">Registro unico del contribuyente</a></li>
+                          <li><a class="dropdown-item" href="#" value="ci">Cedula de Identidad</a></li>
+                          <li><a class="dropdown-item" href="#" value="pnr">Personas No Residentes</a></li>
+                          <li><a class="dropdown-item" href="#" value="pr">Personas Residentes</a></li>
+        
+                        </ul>
+                      </div>
+                </div>
+            </div>
+            
+            <div class="col-6 mt-3">
+                <div class="col">
+                    <label for="inputCity" class="form-label">Alias</label>
+                    <input type="text" class="form-control  border-2 border-top-0 border-start-0 border-end-0 rounded-0 shadow-none  input-border-style " id="inputCity">
+                </div>
+                <div class="col-md-11 mt-3">
+                    <label for="inputCity" class="form-label">Denominacion</label>
+                    <input type="text" class="form-control  border-2 border-top-0 border-start-0 border-end-0 rounded-0 shadow-none  input-border-style " id="inputCity">
+                </div>
+                <div class="col-md-11 mt-3">
+                    <label for="inputCity" class="form-label">Numero de documento</label>
+                    <input type="text" id="nroDoc" class="form-control  border-2 border-top-0 border-start-0 border-end-0 rounded-0 shadow-none  input-border-style ">
+                </div>
+
+            </div>
+            <div class="col-12 mt-3">
+                <label for="inputCity" class="form-label">Domicilio</label>
+                <input type="text" class="form-control  border-2 border-top-0 border-start-0 border-end-0  rounded-0  shadow-none    input-border-style " id="inputCity">
+            </div>
+            <div class="col-12 mt-3">
+                <label for="inputCity" class="form-label">Localidad</label>
+                <input type="text" class="form-control  border-2 border-top-0 border-start-0 border-end-0 rounded-0 shadow-none  input-border-style " id="inputCity">
+            </div>
+
+
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <script src="java.js"></script>
+</body>
+
+</html>
